@@ -55,30 +55,46 @@ nav {
 
 }
 
-
-/*  ____________________________________________________ */
-
-hr {
-    height: 1vh;
-    background: rgb(253, 160, 123);
-}
-
-h4 {
-    color: rgb(255, 119, 41);
-}
-
-h3 {
-    color: rgb(238, 130, 67);
-}
-
-#vacancies {
-    margin: 2rem;
-
-
-}
-
 body {
     background: linear-gradient(rgb(177, 248, 180), #bde3fc);
     background-size: 100vw 100vh;
 }
-
+img {
+    height: 80vh;
+    width: 95vw;
+}
+hr{
+    background:rgb(211, 111, 149);
+    height: 1.5vh;
+}
+input:not(input[type="submit"]){
+    width:30vw;
+    height: 4vh;
+    padding:1vw;
+    border-radius: 0.5rem;
+    color:#bb0000;
+}
+input[type="submit"]{
+    padding:1vw;
+    color:#bb0000;
+    height: 6vh;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+label{
+    font-weight: 400;
+    margin:1vw;
+}
+h3{
+    color:blueviolet;
+    text-align: center;
+}
+form{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+hr{
+    width: 100vw;
+}

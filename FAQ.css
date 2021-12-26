@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:whitesmoke;
+
+}
+header a {
+    margin:0.5rem 2rem;
+    text-decoration: none; 
+    color:black;
+}
+marquee{
+    color:#bb0000;
+    margin:0.5vw;
+}
+ul{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+nav li{
+    margin: 0.25vw 2.5vw;
+    list-style-type: none;
+   
+}
+nav a{
+    text-decoration:none;
+    color:black;
+}
+nav{
+    background:rgb(232, 255, 208);
+    border:0.05rem solid rgb(232, 255, 208);
+    border-radius: 2rem;
+    box-shadow: 0.5vw 0.5vw 0.5vw rgb(216, 207, 207);
+}
+#logo{
+    width:3rem;
+    height:3rem;
+
+}
+body{
+    background:linear-gradient(rgb(177, 248, 180), #bde3fc);
+    background-size: 100vw 100vh;
+}
+input{
+    padding:1vw;
+    margin:1vw;
+    width:20vw;
+    color:#bb0000;
+    border-radius: 1rem;
+}
+input[type="submit"],input[type="reset"]{
+    cursor: pointer;
+}
+#Address,#Query{
+    height:30vh;
+}
+hr{
+    background:rgb(243, 78, 105);
+    height:1.5vh;
+}
+img{
+    height:70vh;
+    width:100vw;
+}
+label,h2{
+    color:blueviolet;
+}
