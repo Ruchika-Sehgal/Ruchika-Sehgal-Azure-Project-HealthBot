@@ -2,7 +2,7 @@ document.getElementById("0").style.background = "CYAN";
 let rightArrow = document.getElementById("rightArrow");
 let leftArrow = document.getElementById("leftArrow");
 let imgSourceIndex = 0;
-const imageSrcArr = ["http://127.0.0.1:5500/photo.jpg", "http://127.0.0.1:5500/photo2.jpeg", "http://127.0.0.1:5500/photo3.jpeg", "http://127.0.0.1:5500/photo4.jpeg", "http://127.0.0.1:5500/photo5.jpeg"];
+const imageSrcArr = ["https://ruchika-sehgal.github.io/Ruchika-Sehgal-Azure-Project-HealthBot/photo.jpg", "https://ruchika-sehgal.github.io/Ruchika-Sehgal-Azure-Project-HealthBot/photo2.jpeg", "https://ruchika-sehgal.github.io/Ruchika-Sehgal-Azure-Project-HealthBot/photo3.jpeg", "https://ruchika-sehgal.github.io/Ruchika-Sehgal-Azure-Project-HealthBot/photo4.jpeg", "https://ruchika-sehgal.github.io/Ruchika-Sehgal-Azure-Project-HealthBot/photo5.jpeg"];
 $(".fa-play").hide();
 rightArrow.addEventListener("click", () => {
     right();
