@@ -70,3 +70,53 @@ $(".fa-play").click(() => {
     }, 2000)
     IntervalSet = toggleImage;
 })
+
+// var xhr = new XMLHttpRequest();
+// xhr.open('GET', "https://webchat.botframework.com/api/tokens", true);
+// xhr.setRequestHeader('Authorization', 'BotConnector ' + 'R8hLnaodo8w.FL1miT0qXMIpR7OKP8TOoD8-U3XYGeKGbV2l7WG2Ci4');
+// xhr.send();
+// xhr.onreadystatechange = processRequest;
+
+// function processRequest(e) {
+//     let iframe = document.createElement('iframe');
+//     console.log(xhr.response);
+//     iframe.src = `https://webchat.botframework.com/embed/appointment_booker?s=${xhr.response}`
+//     document.body.append(iframe)
+// }
+let randomNumber = Math.floor(Math.random() * 400000) + 100;
+window.WebChat.renderWebChat(
+    {
+       directLine: window.WebChat.createDirectLine({
+          token: 'STWPS_SEbIg.OU6btFi2tsOpKGBCnEepagSPtGE_QKO0k1DqMebHaCU'
+       }),
+       userID: randomNumber
+    },
+    document.getElementById('web-chat')
+
+ );
+ $(".fa-comment").click(()=>{
+     $(".Body").fadeOut(1000);
+    $(".chat").css({
+        "width":"100vw",
+        "height":"90vh",
+        "background-color":"#fff",
+    })
+    $("#web-chat").css({
+        "display":"flex"
+    })
+    $(".chat").show();
+    $(".chatIcon").fadeOut(1000);
+})
+$(".cross").click(()=>{
+    $(".Body").fadeIn(1000);
+   $(".chat").css({
+       "width":"100vw",
+       "height":"90vh",
+       "background-color":"#fff",
+   })
+   $("#web-chat").css({
+    "display":"none"
+})
+   $(".chat").fadeOut(1000);
+   $(".chatIcon").fadeIn(1000);
+})
