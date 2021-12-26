@@ -87,7 +87,7 @@ let randomNumber = Math.floor(Math.random() * 400000) + 100;
 window.WebChat.renderWebChat(
     {
        directLine: window.WebChat.createDirectLine({
-          token: 'STWPS_SEbIg.OU6btFi2tsOpKGBCnEepagSPtGE_QKO0k1DqMebHaCU'
+          token: 'z7WqHiZm9p4.xWv23Ajbb8usObBo_CT6L115WJnXVeaAGaKiD0ZwhPU'
        }),
        userID: randomNumber
     },
