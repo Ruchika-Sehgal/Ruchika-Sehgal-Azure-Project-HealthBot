@@ -98,7 +98,7 @@ window.WebChat.renderWebChat(
      $(".Body").fadeOut(1000);
     $(".chat").css({
         "width":"100vw",
-        "height":"90vh",
+        
         "background-color":"#fff",
     })
     $("#web-chat").css({
