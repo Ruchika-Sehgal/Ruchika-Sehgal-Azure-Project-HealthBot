@@ -295,3 +295,39 @@ header {
 footer{
     background-color:#fff;
 }
+.chatIcon{
+    position: fixed;
+    bottom: 4vw;
+    right:3vw;
+    background-color:rgb(194, 243, 79);
+    width:7vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:7vw;
+    border-radius:100%;
+    font-size: 4vw;
+    box-shadow: 0.5vw 0.5vw 0.6vw black;
+    color:rgb(57, 36, 241);
+}
+.chat > #web-chat{
+    position:fixed;
+    bottom: 0;
+    width:100%;
+}
+.chat  h2{
+    padding:4vw 0vw;
+    text-align: center;
+    color:blueviolet;
+    font-weight:100;
+}
+.chat b{
+    margin:29vw;
+    padding:8vw
+}
+#web-chat{
+    display:none;
+}
+.cross{
+    cursor: pointer;
+}
