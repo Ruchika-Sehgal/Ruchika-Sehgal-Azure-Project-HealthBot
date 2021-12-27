@@ -18,4 +18,6 @@ $(".fa-bars").click(()=>{
         $(".navul").removeClass("applied");
         clicked = false;
     }
+    
 })
+console.log("{}{")
