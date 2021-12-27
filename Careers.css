@@ -112,11 +112,15 @@ hr{
     {
         display:block !important;
     }
-    img{
+    img:not(.fa-bars){
         width:15rem;
         height:15rem;
     }
 }
 .applied{
     display:block !important;
+}
+.fa-bars{
+    width:1rem;
+    height:1rem;
 }
