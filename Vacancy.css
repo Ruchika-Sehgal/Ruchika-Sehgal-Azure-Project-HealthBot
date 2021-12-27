@@ -82,3 +82,24 @@ body {
     background-size: 100vw 100vh;
 }
 
+p,h3{
+    margin:3rem 0vw;
+}
+@media screen and (max-width:700px) {
+    .fa-bars{display:block !important;}
+    header , nav ul li {
+        display:none;
+    }
+    
+    nav ul li:nth-child(2),
+    nav ul li:nth-child(3),
+    nav ul li:nth-child(4),
+    nav ul li:last-child,
+    .applied
+    {
+        display:block !important;
+    }
+}
+.applied{
+    display:block !important;
+}
