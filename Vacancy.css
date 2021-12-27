@@ -76,6 +76,8 @@ h3 {
 
 
 }
+.fa-bars{display:none !important;}
+
 
 body {
     background: linear-gradient(rgb(177, 248, 180), #bde3fc);
@@ -98,6 +100,10 @@ p,h3{
     .applied
     {
         display:block !important;
+    }
+    img{
+        width:15rem;
+        height:15rem;
     }
 }
 .applied{

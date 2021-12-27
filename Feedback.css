@@ -47,6 +47,7 @@ nav{
 
 }
 
+.fa-bars{display:none !important;}
 body{
     background:linear-gradient(rgb(177, 248, 180), #bde3fc);
     background-size: 100vw 100vh;
@@ -76,6 +77,7 @@ img{
 label,h2{
     color:blueviolet;
 }
+
 @media screen and (max-width:700px) {
     .fa-bars{display:block !important;}
     header , nav ul li {
@@ -89,6 +91,10 @@ label,h2{
     .applied
     {
         display:block !important;
+    }
+    img{
+        width:15rem;
+        height:15rem;
     }
 }
 .applied{

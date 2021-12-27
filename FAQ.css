@@ -71,6 +71,8 @@ img{
     height:70vh;
     width:100vw;
 }
+.fa-bars{display:none !important;}
+
 label,h2{
     color:blueviolet;
 }
@@ -87,6 +89,10 @@ label,h2{
     .applied
     {
         display:block !important;
+    }
+    img{
+        width:15rem;
+        height:15rem;
     }
 }
 .applied{

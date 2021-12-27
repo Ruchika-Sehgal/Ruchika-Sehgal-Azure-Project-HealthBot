@@ -61,6 +61,7 @@ h2{
     
     color:blueviolet;
 }
+.fa-bars{display:none !important;}
 hr{
     height:1vw;
     background: rgb(243, 123, 143);
@@ -88,6 +89,10 @@ img{
     .applied
     {
         display:block !important;
+    }
+    img{
+        width:15rem;
+        height:15rem;
     }
 }
 .applied{
