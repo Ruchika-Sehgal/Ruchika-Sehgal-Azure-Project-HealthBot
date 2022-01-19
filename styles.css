@@ -1,3 +1,8 @@
+*{
+    -webkit-user-select: none;   
+    -ms-user-select: none;   
+    user-select: none;
+}
 body {
     background: url("./Bg.jpg");
     width: 100%;
@@ -6,11 +11,11 @@ body {
     background-repeat: no-repeat;
     margin: 0;
 }
-
 nav {
     border-radius: 2vw;
     background: rgb(210, 241, 216);
     box-shadow: 0vw 0.5vw 0.8vw rgb(190, 175, 181);
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
@@ -93,7 +98,6 @@ header {
     color: white;
     font-size: 3rem;
     position: absolute;
-    /* bottom: 13rem; */
     top: 63vh;
     left: 2rem;
 }
@@ -102,14 +106,9 @@ header {
     color: white;
     font-size: 3rem;
     position: absolute;
-    /* bottom: 13rem; */
     top: 63vh;
     right: 2.5rem;
 
-}
-
-* {
-    transition: all 3ms ease-in-out;
 }
 
 .fa-pause,
@@ -139,11 +138,7 @@ header {
 
 .services {
     display: flex;
-    align-items: center;
     justify-content: center;
-    /* display: grid;
-    grid-template-columns: irem irem irem;
-    grid-template-rows: irem; */
 }
 
 .serviceBox {
@@ -163,10 +158,6 @@ header {
 
 .services .serviceBox {
     background-color: rgb(224, 223, 223);
-    /* display: grid;
-    grid-template-columns: ifr ifr ifr;
-    grid-template-rows: ifr; */
-
     padding: 1rem;
     border: 0.1vw solid #fff;
     border-radius: 1vw;
@@ -183,17 +174,6 @@ header {
     align-items: center;
 }
 
-.serviceBox .photo img {
-
-    /* background:#000; */
-}
-
-* {
-    transition: all 1200ms ease;
-}
-
-
-
 #intro {
     background: #fff;
     border: 1px solid #000;
@@ -205,8 +185,6 @@ header {
 .fa-patient {
     font-size:5rem;
     margin:2rem;
-    /* padding:3.5rem; */
-
 }
 
 .group1{
@@ -291,12 +269,10 @@ footer{
     bottom: 4vw;
     right:3vw;
     background-color:rgb(194, 243, 79);
-    width:7vw;
+    width:100vw;
     display:flex;
     align-items: center;
-    justify-content: center;
     height:7vw;
-    border-radius:100%;
     font-size: 4vw;
     box-shadow: 0.5vw 0.5vw 0.6vw black;
     color:rgb(57, 36, 241);
@@ -335,7 +311,29 @@ footer{
 
 }
 .fa-bars{display: none !important;}
+
+.applied{
+    display:block !important;
+}
+
+.chatIcon::before{
+    position: absolute;
+    content:"Book An Apppointment Using Bot";
+    left:10%;
+    animation: removeContent 300ms forwards 60s 1;
+}
+.chatIcon{
+    animation: bounce 1200ms linear 1,
+    shrink 1200ms forwards 60s 1;
+}
+.chatIcon i{
+    position: absolute;
+    right:10%;
+}
+
+
 /* Media Queries */
+
 @media screen and (max-width:700px) {
     .services {
         flex-direction: column;
@@ -384,17 +382,44 @@ footer{
     .picpara{
         flex-direction: column;
     }
-    .chatIcon{
-        width:20vw;
-        height:20vw;
-        font-size: 3rem;
-    }
-}
-.applied{
-    display:block !important;
 }
 @media screen and (max-width:992px) {
     .chat h2 b{
         display:none;
+    }
+}
+
+
+/* Animations */
+
+
+@keyframes bounce {
+    0%{
+        bottom:-100%;
+    }
+    50%{
+        bottom:0;
+    }
+    75%{
+        bottom:20%;
+    }
+    100%{
+        bottom:10%;
+    }
+}
+@keyframes removeContent{
+    to{
+        content:'';
+    }
+}
+@keyframes grow {
+    to{
+        width:100%;
+    }
+}
+@keyframes shrink {
+    to{
+        width:0vw;
+        border-radius: 100%;
     }
 }
