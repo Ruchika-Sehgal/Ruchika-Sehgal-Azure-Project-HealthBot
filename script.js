@@ -94,7 +94,7 @@ window.WebChat.renderWebChat(
     document.getElementById('web-chat')
 
  );
- $(".fa-comment").click(()=>{
+ $(".chatIcon").click(()=>{
      $(".Body").fadeOut(1000);
     $(".chat").css({
         "width":"100vw",
@@ -141,3 +141,5 @@ $(".fa-bars").click(()=>{
         clicked = false;
     }
 })
+
+$(".webchat__send-box-text-box__input").attr("placeholder","Say Hi");
