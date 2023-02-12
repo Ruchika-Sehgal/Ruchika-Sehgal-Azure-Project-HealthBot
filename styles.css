@@ -273,7 +273,8 @@ footer{
     bottom: 4vw;
     right:3vw;
     background-color:rgb(194, 243, 79);
-    width:100vw;
+    width:6vw;
+    border-radius:2rem;
     display:flex;
     align-items: center;
     height:7vw;
