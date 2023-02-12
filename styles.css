@@ -321,12 +321,6 @@ footer{
     display:block !important;
 }
 
-.chatIcon::before{
-    position: absolute;
-    content:"Book An Apppointment Using Bot";
-    left:10%;
-    animation: removeContent 300ms forwards 60s 1;
-}
 .chatIcon{
     animation: bounce 1200ms linear 1,
     shrink 1200ms forwards 60s 1;
